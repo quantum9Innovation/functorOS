@@ -39,7 +39,7 @@ in
     };
     nixTrustWheel = lib.mkOption {
       type = lib.types.bool;
-      default = cfg.disable;
+      default = !cfg.nixSaneDefaults;
       description = ''
         Whether to allow any user in the group `wheel` to manipulate the Nix store.
 
