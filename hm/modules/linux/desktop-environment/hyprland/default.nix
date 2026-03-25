@@ -92,7 +92,7 @@ in
     wayland.windowManager.hyprland = {
       enable = true;
       plugins = [
-        pkgs.hyprlandPlugins.hyprscrolling
+        # pkgs.hyprlandPlugins.hyprscrolling
       ];
       settings = {
         exec-once = [
@@ -216,11 +216,11 @@ in
         input = {
           sensitivity = if config.functorOS.formFactor == "laptop" then "0.0" else "-0.65";
         };
-        plugin.hyprscrolling = {
-          explicit_column_widths = "0.333, 0.5, 0.667, 1.0";
-          fullscreen_on_one_column = true;
-          focus_fit_method = "1";
-        };
+        # plugin.hyprscrolling = {
+        #   explicit_column_widths = "0.333, 0.5, 0.667, 1.0";
+        #   fullscreen_on_one_column = true;
+        #   focus_fit_method = "1";
+        # };
       };
     };
 
